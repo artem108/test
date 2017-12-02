@@ -1,6 +1,4 @@
 import React, { Component } from 'react'
-import { ChillImg }   from './../../styled/Talk.style'
-import { Title }  from './../../styled/Home.style'
 
 class Products extends Component {
 
@@ -10,10 +8,8 @@ class Products extends Component {
     }
 
   onClick() {
-      // const { addToCart } = this.props.addToCart
       const id = this.props
-
-        this.props.addToCart(id)
+      this.props.addToCart(id)
       }
 
   render() {
@@ -30,6 +26,7 @@ class Products extends Component {
         <span>Name: {name}</span><br/>
         <span>Price: {price} usd </span>
         <button onClick={this.onClick}>Add to cart</button>
+
       </section>
     );
   }

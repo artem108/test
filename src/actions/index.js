@@ -5,10 +5,10 @@ export function loadProducts (state) {
     }
 }
 
-export function selectMySkills(state) {
+export function selectProducts (product) {
     return {
-      type: 'SELECTED_SKILLS',
-      skills: state
+      type: 'SELECTED_PRODUCT',
+      select: product
     }
 }
 
